@@ -9,12 +9,14 @@ module.exports = {
 		path: path.resolve(__dirname, 'dist')
 	},
 	devServer: {
-		port: 3000
+		port: 3000,
+		historyApiFallback: true
 	},
 	plugins: [
 		new HTMLPlugin({
 			template: path.resolve(__dirname, 'src', 'index.html'),
-			filename: 'index.html'
+			filename: 'index.html',
+			favicon: path.resolve(__dirname, 'src', 'assets', 'img', 'pizza-logo.svg')
 		}),
 		new CleanWebpackPlugin()
 	],
@@ -23,6 +25,7 @@ module.exports = {
 		alias: {
 			'@assets': path.resolve(__dirname, 'src', 'assets'),
 			'@components': path.resolve(__dirname, 'src', 'components'),
+			'@pages': path.resolve(__dirname, 'src', 'pages'),
 			'@containers': path.resolve(__dirname, 'src', 'containers'),
 		}
 	},
