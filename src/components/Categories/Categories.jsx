@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-export function Categories(props) {
+export const Categories = (props) => {
 	const {items} = props;
 
 	const [activeItem, setActiveItem] = useState(null);

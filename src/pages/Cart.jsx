@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Cart() {
+export const Cart = () => {
 	return (
 		<div className="container container--cart">
 			<div className="cart cart--empty">

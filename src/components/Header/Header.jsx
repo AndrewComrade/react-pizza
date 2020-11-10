@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 import logo from "@assets/img/pizza-logo.svg"
 
-export function Header() {
+export const Header = () => {
 	return (
 		<div className="header">
 			<div className="container">

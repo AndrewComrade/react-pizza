@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react';
 
-export function Sort(props) {
+export const Sort = (props) => {
 	const {items} = props;
 
 	const [visibleSort, setVisibleSort] = useState(false);
