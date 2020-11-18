@@ -50,7 +50,7 @@ This is my personal project which I develop in free time to using technologies l
 
 Originally I wanted to build an application which simulating delivery service.
 
-One of the main challenges that I am trying to solve now it's sorting and filtrating of data which comes from fake back end.
+One of the main challenges that I am working on now it's sorting and filtrating functionality of data which comes from fake back end.
 
 At the end of the day, the technologies implemented in this project are React, React-Router, Redux, Classnames library and Json-server for imitation back end part.
 
