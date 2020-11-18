@@ -13,7 +13,7 @@ export function App() {
 	const dispatch = useDispatch();
 
 	React.useEffect(() => {
-		fetch('http://localhost:3004/pizzas')
+		fetch('http://localhost:3001/pizzas')
 			.then(response => response.json())
 			.then(data => {
 				dispatch(setPizzas(data));
