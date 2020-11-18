@@ -32,7 +32,7 @@ To install project dependencies run
 
 **Setup:**
 
-To run the project run
+To start the project run
 
 `npm start` for starting project and then `npm server` for starting json-server
 
