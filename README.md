@@ -1,9 +1,9 @@
-#React-pizza
+# React-pizza
 
 An application used to order some delicious pizza.
 Project based on ReactJS, Redux, JS, SCSS. Using json-server for fake back-end to sort and filter pizzas.
 
-##Project Status
+## Project Status
 
 This project is currently in development.
 Users can change type and size of pizza.
@@ -11,7 +11,7 @@ Change sort and filter status.
 
 Sorting and filtrating functionality is in progress.
 
-##Technology Stack
+## Technology Stack
 
 - React.js
 - React router
@@ -44,7 +44,7 @@ localhost:3000
 
 localhost:3001/pizzas
 
-##Reflection
+## Reflection
 
 This is my personal project which I develop in free time to using technologies learned up until this point and familiarizing myself with documentation for new features.
 
