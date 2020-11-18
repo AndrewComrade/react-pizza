@@ -1,16 +1,16 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React from "react";
 
 export const Sort = (props) => {
 	const {items} = props;
 
-	const [visibleSort, setVisibleSort] = useState(false);
-	const [activeSort, setActiveSort] = useState(0);
+	const [visibleSort, setVisibleSort] = React.useState(false);
+	const [activeSort, setActiveSort] = React.useState(0);
 
 	const activeSortLabel = items[activeSort];
 
-	const sortRef = useRef();
+	const sortRef = React.useRef();
 
-	useEffect(() => {
+	React.useEffect(() => {
 		if(!!sortRef.current) {
 			document.addEventListener('click', event => {
 				if(!sortRef.current.contains(event.target)) {

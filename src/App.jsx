@@ -4,7 +4,7 @@ import React from "react";
 import {useDispatch} from "react-redux";
 import {Route, Switch} from "react-router-dom";
 
-import {setPizzas} from "./redux/actions/pizzas";
+import {setPizzas} from "@actions/pizzas";
 
 import {Header} from "@components";
 import {Home, Cart} from "@pages";
@@ -13,10 +13,10 @@ export function App() {
 	const dispatch = useDispatch();
 
 	React.useEffect(() => {
-		fetch('http://localhost:3000/public/db.json')
+		fetch('http://localhost:3004/pizzas')
 			.then(response => response.json())
 			.then(data => {
-				dispatch(setPizzas(data.pizzas));
+				dispatch(setPizzas(data));
 			});
 	}, []);
 
