@@ -44,13 +44,46 @@ localhost:3000
 
 localhost:3001/pizzas
 
-## Reflection
+## Structure
 
-This is my personal project which I develop in free time to using technologies learned up until this point and familiarizing myself with documentation for new features.
+**Components:**
 
-Originally I wanted to build an application which simulating delivery service.
+Folder contains all basic components like header, pizza block, categories, button etc.
+All `.jsx` files should be imported to `index.js` first and then to other Components/Pages.
 
-One of the main challenges that I am working on now it's sorting and filtrating functionality of data which comes from fake back end.
+**Pages:**
 
-At the end of the day, the technologies implemented in this project are React, React-Router, Redux, Classnames library and Json-server for imitation back end part.
+Folder contains routes of app.
+All `.jsx` files should be imported to `index.js` first.
+
+**Redux:**
+
+Folder contains actions, reducers and store of app.
+`redux/reducers/index.js` is using to combine reducers.
+
+**Assets:**
+
+Folder contains media files like image.
+
+**Scss:**
+
+Folder contains styles for components, fonts and normalize lib.
+
+**Aliases:**
+
+For shorter imports you can use aliases:
+- `@assets` for src/assets,
+- `@components` for src/components,
+- `@pages` for src/pages,
+- `@actions` for src/redux/actions,
+- `@reducers` for src/redux/reducers
+
+**Babel:**
+
+`.babelrc` it's Babel configuration file.
+
+**Webpack config:**
+
+It's webpack settings. Contains HTMLPlugin, CleanWebpackPlugin, devServer, sass-loader, file-loader.
+
 
