@@ -67,7 +67,7 @@ Folder contains media files like image.
 
 **Scss:**
 
-Folder contains styles for components, fonts and normalize lib.
+Folder contains styles for components, general styles, scss variables, fonts and normalize lib.
 
 **Aliases:**
 
